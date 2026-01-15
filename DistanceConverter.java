@@ -1,5 +1,6 @@
 import java.util.Scanner;
-a
+ 
+
 public class DistanceConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +17,6 @@ public class DistanceConverter {
         } while (meters < 0);
         
         int choice;
-        
         // Display menu and process choices until user quits
         do {
             menu();
@@ -48,9 +48,6 @@ public class DistanceConverter {
         scanner.close();
     }
     
-    /**
-     * Displays the menu of conversion options.
-     */
     public static void menu() {
         System.out.println("\n=== Distance Converter Menu ===");
         System.out.println("1. Convert to kilometers");
@@ -59,31 +56,19 @@ public class DistanceConverter {
         System.out.println("4. Quit the program");
     }
     
-    /**
-     * Converts meters to kilometers and displays the result.
-     * 
-     * @param meters the distance in meters to convert
-     */
+
     public static void showKilometers(double meters) {
         double kilometers = meters * 0.001;
         System.out.printf("%.2f meters = %.4f kilometers%n", meters, kilometers);
     }
     
-    /**
-     * Converts meters to inches and displays the result.
-     * 
-     * @param meters the distance in meters to convert
-     */
+    
     public static void showInches(double meters) {
         double inches = meters * 39.37;
         System.out.printf("%.2f meters = %.2f inches%n", meters, inches);
     }
     
-    /**
-     * Converts meters to feet and displays the result.
-     * 
-     * @param meters the distance in meters to convert
-     */
+    
     public static void showFeet(double meters) {
         double feet = meters * 3.281;
         System.out.printf("%.2f meters = %.2f feet%n", meters, feet);
