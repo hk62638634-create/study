@@ -3,10 +3,7 @@ public class TestScores {
 
     public TestScores(double[] scores) {
         // First make a copy of the array
-        this.scores = new double[scores.length];
-        for (int i = 0; i < scores.length; i++) {
-            this.scores[i] = scores[i];
-        }
+        this.scores = scores;
         validateScores();
     }
 
