@@ -1,13 +1,13 @@
 public class Person {
     private String name;
     private String address;
-    private String telephoneNumber;
+    private String phone;
     
     // Constructor
-    public Person(String name, String address, String telephoneNumber) {
+    public Person(String name, String address, String phone) {
         this.name = name;
         this.address = address;
-        this.telephoneNumber = telephoneNumber;
+        this.phone = phone;
     }
     
     // Getters
@@ -20,6 +20,6 @@ public class Person {
     }
     
     public String getPhone() {
-        return telephoneNumber;
+        return phone;
     }
 }
