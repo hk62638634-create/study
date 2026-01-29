@@ -37,8 +37,7 @@ public class CustomerDemo {
         System.out.println("Discount Level: " + discount + "%");
         
         if (discount > 0) {
-            System.out.println("Congratulations! You qualify for a " + discount + 
-                             "% discount on future purchases.");
+            System.out.println("Congratulations! You qualify for a " + discount + "% discount on future purchases.");
         } else {
             System.out.println("Spend $500 or more to qualify for discounts.");
         }
